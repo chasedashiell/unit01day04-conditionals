@@ -1,15 +1,16 @@
-
+// good
 public class Quadratic {
     public static void quad(int a, int b, int c){
         double ad = a + 0.0;
         double bd = b + 0.0; 
         double cd = c + 0.0; 
         double disc = b * b - 4 * a * c;
-  // if the discriminate is less that 0 
+  // if the discriminant is less that 0 
       if (disc < 0 ){
         System.out.println("No real roots");
-  // if the discriminate == 0 then there is one real root
+  // if the discriminant == 0 then there is one real root
       } else if (disc == 0){
+        // when the discriminant is zero, both solutions are identical, so you could just print one
         double result1 = (-b + Math.sqrt(disc)) / (2 * a);
         double result2 = (-b - Math.sqrt(disc)) / (2 * a);
         System.out.println(result1);
